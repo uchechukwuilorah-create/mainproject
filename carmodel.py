@@ -5,7 +5,7 @@ import numpy as np
 
 # Load the trained pipeline and feature names
 try:
-    with open('car_price_model_pipeline2.pkl', 'rb') as f:
+    with open('car_price_model_pipeline 2.pkl', 'rb') as f:
         pipeline = pickle.load(f)
     with open('feature_names.pkl', 'rb') as f:
         all_feature_names = pickle.load(f)
@@ -53,3 +53,4 @@ if st.button('Predict Price'):
         st.error(f"Error during prediction: {e}")
 
         st.write("Please ensure all input fields are valid and the model can process them.")
+
